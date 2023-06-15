@@ -1,0 +1,53 @@
+<%= form_tag("/positions/move") do %>
+  <p>指し手</p>
+  <input name="move">
+  <input type="submit" value="送信">
+<% end %>
+
+<div>
+    <img src="/assets/touka.png" class="stand">
+</div>
+
+<div>
+    <img src="/assets/board.png" class="board">
+</div>
+
+<div>
+    <% i = 0 %>
+    <% i_second = 273%>
+
+    <% while $game_csa[4 * i + 272] != "\n" do %>
+        <% koma = $game_csa[4 * i + 274..4 * i + 275] %>
+        <% path = "/assets/#{koma}.png" %>
+        <%= image_tag path, class: "captured_first-#{i}" %>
+        <% i += 1 %>
+        <% i_second = 4 * i + 273 %>
+    <% end %>
+</div>
+
+<div>
+    <% i = 0 %>
+
+    <% while $game_csa[4 * i + i_second + 2] != "\n" do %>
+        <% koma = $game_csa[4 * i + i_second + 4..4 * i + i_second + 5] %>
+        <% path = "/assets/#{koma}.png" %>
+        <%= image_tag path, class: "captured_second-#{i}" %>
+        <% i += 1 %>
+    <% end %>
+</div>
+    
+<% for j in 1..9 do %>
+    <div>
+        <% for i in 1..9 do %>
+            <% koma = $game_csa[30 * (j - 1) + 3 * (i - 1) + 2..30 * (j - 1) + 3 * (i - 1) + 4] %>
+            <% path = "/assets/#{koma[1..2]}.png" %>
+            <%# <img src="/assets/board.png" class="board"> %>
+
+            <% if koma[0] == "+" then %>
+                <%= image_tag path, class: "position-#{i}#{j}"%>
+            <% elsif koma[0] == "-" then %>
+                <%= image_tag path, class: "aite position-#{i}#{j}"%>
+            <% end %>
+        <% end %>
+    <div>
+<% end %>

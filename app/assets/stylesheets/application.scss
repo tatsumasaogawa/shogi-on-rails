@@ -1,0 +1,48 @@
+.board {
+    position: relative;
+    // top: 5px;
+    // width: 300px;
+    // height: 300px;
+}
+
+.stand {
+    position: relative;
+    width: 60px;
+    height: 70px;
+}
+
+.aite {
+    transform: scale(-1, -1); 
+}
+
+@for $i from 0 through 39 {
+    .captured_first-#{$i} {
+        position: absolute;
+        top: 10 * 83.5px + 162px;
+        left: ($i + 1) * 83.5px + 17px;
+        width: 60px;
+        height: 70px;
+    }
+
+    .captured_second-#{$i} {
+        transform: scale(-1, -1);
+        position: absolute;
+        top: 0 * 83.5px + 95px;
+        left: ($i + 1) * 83.5px + 17px;
+        width: 60px;
+        height: 70px;
+    }   
+}
+
+@for $i from 1 through 9 {
+    @for $j from 1 through 9 {
+        .position-#{$i}#{$j} {
+            position: absolute;
+            top: ($j) * 83.5px + 161px;
+            left: ($i) * 83.5px + 17px;
+            width: 60px;
+            height: 70px;
+
+        }
+    }
+}

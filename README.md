@@ -25,3 +25,6 @@ rails server
 3. 左上のテキストボックスに [CSA 形式](http://www2.computer-shogi.org/protocol/record_v22.html) で指し手を入力し送信ボタンを押すことで, 局面を進めることができます.
 ![スクリーンショット 2023-11-22 14 18 01](https://github.com/tatsumasaogawa/shogi-on-rails/assets/134250566/3260fe13-3d18-4caf-94ec-17cd724360c8)
 ![スクリーンショット 2023-11-22 14 06 32](https://github.com/tatsumasaogawa/shogi-on-rails/assets/134250566/59893c6b-ba79-4c58-a8cf-7fdca88301ae)
+
+## ライセンス
+このプロジェクトのライセンスは MIT ライセンスです. 詳細は [LICENSE] をご覧ください.

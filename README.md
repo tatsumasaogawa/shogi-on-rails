@@ -28,3 +28,5 @@ rails server
 
 ## ライセンス
 このプロジェクトのライセンスは MIT ライセンスです. 詳細は [LICENSE] をご覧ください.
+
+[LICENSE]: https://github.com/tatsumasaogawa/shogi-on-rails/blob/main/LICENSE

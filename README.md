@@ -20,11 +20,11 @@ rails server
 ```
 
 2. Web ブラウザで http://127.0.0.1:3000/games/new にアクセスする.
-![スクリーンショット 2023-11-22 14 06 21](https://github.com/tatsumasaogawa/shogi-on-rails/assets/134250566/13ef1a8f-4d9a-44be-93b1-6925a4c96489)
+![スクリーンショット 2023-11-22 15 30 57](https://github.com/tatsumasaogawa/shogi-on-rails/assets/134250566/0cea8eab-ccdc-4b91-8b6e-8369713d8848)
 
 3. 左上のテキストボックスに [CSA 形式](http://www2.computer-shogi.org/protocol/record_v22.html) で指し手を入力し送信ボタンを押すことで, 局面を進めることができます.
-![スクリーンショット 2023-11-22 14 18 01](https://github.com/tatsumasaogawa/shogi-on-rails/assets/134250566/3260fe13-3d18-4caf-94ec-17cd724360c8)
-![スクリーンショット 2023-11-22 14 06 32](https://github.com/tatsumasaogawa/shogi-on-rails/assets/134250566/59893c6b-ba79-4c58-a8cf-7fdca88301ae)
+![スクリーンショット 2023-11-22 15 31 28](https://github.com/tatsumasaogawa/shogi-on-rails/assets/134250566/cd645ba3-50e2-4fa9-bb2d-3f4b6c9ee154)
+![スクリーンショット 2023-11-22 15 31 32](https://github.com/tatsumasaogawa/shogi-on-rails/assets/134250566/3439c209-4f66-4cfa-af77-bab9b6f923d4)
 
 ## ライセンス
 このプロジェクトのライセンスは MIT ライセンスです. 詳細は [LICENSE] をご覧ください.
